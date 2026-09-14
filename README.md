@@ -1,3 +1,4 @@
+
 # 🚗 WhatNext Vision Motors – Salesforce CRM
 
 ### Shaping the Future of Mobility with Innovation and Excellence
@@ -338,4 +339,294 @@ Reports can be created to analyze:
 
 Dashboards provide visual summaries of dealership operations.
 
-Example dashboard c
+Example dashboard components:
+
+```text
+┌────────────────────┐
+│ Vehicle Inventory  │
+└────────────────────┘
+
+┌────────────────────┐
+│ Order Activity     │
+└────────────────────┘
+
+┌────────────────────┐
+│ Test Drive Status  │
+└────────────────────┘
+
+┌────────────────────┐
+│ Service Requests   │
+└────────────────────┘
+```
+
+This allows management to understand business activity quickly.
+
+---
+
+# 🔐 Security
+
+Security is implemented using Salesforce's standard security mechanisms.
+
+### Security Components
+
+* **Profiles** – Define basic user permissions.
+* **Roles** – Help control record visibility.
+* **Role Hierarchy** – Provides hierarchical access.
+* **Permission Sets** – Provide additional permissions.
+* **Sharing Rules** – Extend record access when required.
+* **Object-Level Permissions** – Control access to objects.
+
+The objective is to ensure that users have access only to the information required for their responsibilities.
+
+---
+
+# 🧪 Testing
+
+The application was tested using multiple functional scenarios.
+
+| Test Case                          | Expected Result                                  |
+| ---------------------------------- | ------------------------------------------------ |
+| Create valid vehicle               | Vehicle record created successfully              |
+| Confirm order with available stock | Order can be processed                           |
+| Confirm order with zero stock      | Order confirmation prevented                     |
+| Create upcoming test drive         | Reminder automation triggered                    |
+| Process pending order              | Order processed when required stock is available |
+
+Testing helps ensure that the business rules, automation, and Apex logic work as expected.
+
+---
+
+# 🔄 Complete Business Workflow
+
+The overall system workflow can be represented as:
+
+```text
+Customer
+   ↓
+Select Vehicle
+   ↓
+Schedule Test Drive
+   ↓
+Test Drive Reminder
+   ↓
+Create Vehicle Order
+   ↓
+Check Vehicle Stock
+   ↓
+┌──────────────────────┐
+│ Stock Available?     │
+└──────────┬───────────┘
+           │
+      ┌────┴────┐
+      │         │
+     YES        NO
+      │         │
+      ▼         ▼
+Confirm      Keep Order
+Order        Pending
+      │
+      ▼
+Assign Dealer
+      │
+      ▼
+Update Vehicle Stock
+      │
+      ▼
+Vehicle Purchase
+      │
+      ▼
+Service Request
+      │
+      ▼
+Reports & Dashboards
+```
+
+---
+
+# 🛠️ Technology Stack
+
+### Salesforce
+
+* Salesforce CRM
+* Lightning Experience
+* Custom Objects
+* Custom Fields
+* Object Relationships
+* Validation Rules
+* Salesforce Flow
+* Apex
+* Apex Triggers
+* Reports
+* Dashboards
+* Profiles
+* Roles
+* Permission Sets
+* Sharing Rules
+* Dynamic Forms
+
+### Development
+
+* Apex
+* SOQL
+* Salesforce Flow
+* Lightning Experience
+
+---
+
+# 📁 Project Structure
+
+```text
+WhatNext-Vision-Motors/
+│
+├── README.md
+│
+├── force-app/
+│   └── main/
+│       └── default/
+│           ├── classes/
+│           ├── triggers/
+│           ├── objects/
+│           ├── flows/
+│           ├── layouts/
+│           ├── permissionsets/
+│           └── tabs/
+│
+├── docs/
+│   ├── Project-Documentation.pdf
+│   └── Screenshots/
+│
+└── sfdx-project.json
+```
+
+> Update the folder names above according to the actual structure of your Salesforce GitHub repository.
+
+---
+
+# 🚀 Deployment
+
+The Salesforce metadata can be deployed between Salesforce environments using Salesforce deployment tools.
+
+The project contains components such as:
+
+* Custom Objects
+* Custom Fields
+* Relationships
+* Validation Rules
+* Flows
+* Apex Classes
+* Apex Triggers
+* Lightning Pages
+* Reports
+* Dashboards
+
+After deployment, each component should be tested to verify that the complete workflow is functioning correctly.
+
+---
+
+# 🔧 Maintenance & Troubleshooting
+
+For maintaining the application, Salesforce monitoring tools can be used.
+
+### Troubleshooting Process
+
+```text
+Identify Issue
+      ↓
+Reproduce the Issue
+      ↓
+Check Configuration
+      ↓
+Check Flow / Apex
+      ↓
+Review Debug Logs
+      ↓
+Fix the Issue
+      ↓
+Retest
+      ↓
+Deploy
+```
+
+For Apex-related issues, **Debug Logs and Apex Jobs** can be reviewed.
+
+For Flow-related issues, Flow error details can be checked.
+
+---
+
+# 🌟 Key Features
+
+* ✅ Centralized automotive CRM
+* ✅ Vehicle inventory management
+* ✅ Customer management
+* ✅ Dealer management
+* ✅ Vehicle order management
+* ✅ Stock availability validation
+* ✅ Automated dealer assignment
+* ✅ Test-drive reminder automation
+* ✅ Service request management
+* ✅ Apex business logic
+* ✅ Apex Trigger
+* ✅ Lightning Experience UI
+* ✅ Reports and Dashboards
+* ✅ Salesforce security configuration
+* ✅ Data validation
+* ✅ End-to-end testing
+
+---
+
+# 🎓 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* Salesforce CRM development
+* Custom Object creation
+* Object relationships
+* Salesforce Flow automation
+* Validation Rules
+* Apex programming
+* Apex Triggers
+* SOQL
+* Lightning Experience
+* Reports and Dashboards
+* Salesforce security
+* Data management
+* Testing and troubleshooting
+
+The project helped me understand how **declarative Salesforce features and programmatic development can be combined to solve real-world business requirements.**
+
+---
+
+# 👩‍💻 Developer
+
+**Dharshini Sivakumar**
+
+Computer Science and Engineering – Allied with ARVR
+RMK Engineering College
+
+### Areas of Interest
+
+* Salesforce Development
+* Java Full Stack Development
+* MERN Stack
+* UI/UX Design
+* AR/VR
+
+---
+
+# 📜 Project
+
+**Project Name:** WhatNext Vision Motors – Shaping the Future of Mobility with Innovation and Excellence
+
+**Platform:** Salesforce CRM
+
+**Project Type:** Automotive Dealership Management System
+
+---
+
+## ⭐ If you find this project useful
+
+Feel free to explore the project, review the Salesforce implementation, and provide feedback.
+
+**Thank you for visiting this repository!** 🚗☁️
+
+
